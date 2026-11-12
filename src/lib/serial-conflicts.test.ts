@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { initialBoxes } from "./data";
+import { sampleBoxes as initialBoxes } from "./data";
 import { findSerialConflicts, serialConflictMessage } from "./serial-conflicts";
 
 describe("Serial Number uniqueness", () => {

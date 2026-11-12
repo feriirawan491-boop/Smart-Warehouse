@@ -9,7 +9,9 @@ export const initialDeviceModels: DeviceModelOption[] = [
 export type Device = { id: string; mac: string; serial: string };
 export type BoxRecord = { id: string; name: string; number: string; model: Model; devices: Device[]; date: string; status: "confirmed" | "review" };
 
-export const initialBoxes: BoxRecord[] = [
+export const initialBoxes: BoxRecord[] = [];
+
+export const sampleBoxes: BoxRecord[] = [
   { id: "box-001", name: "BOX 1", number: "320080532609300063", model: "ROUTER OUTDOOR T3000", date: "10 Nov 2026, 14:32", status: "confirmed", devices: [
     { id: "1", mac: "5CFFA94CCCA8", serial: "324462875638" }, { id: "2", mac: "5CFFA94CCCDA", serial: "324462875688" }, { id: "3", mac: "5CFFA94CCCD6", serial: "324462875684" }, { id: "4", mac: "5CFFA94CCCD7", serial: "324462875685" }
   ] },

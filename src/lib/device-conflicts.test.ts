@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { initialBoxes } from "./data";
+import { sampleBoxes as initialBoxes } from "./data";
 import { deviceConflictMessage, findDeviceConflicts } from "./device-conflicts";
 
 describe("duplicate device data", () => {
