@@ -7,7 +7,7 @@ export const initialDeviceModels: DeviceModelOption[] = [
   { id: "MF296A2", label: "MF296A2" },
 ];
 export type Device = { id: string; mac: string; serial: string };
-export type BoxRecord = { id: string; name: string; number: string; model: Model; devices: Device[]; date: string; status: "confirmed" | "review" };
+export type BoxRecord = { id: string; name: string; number: string; model: Model; devices: Device[]; date: string; scannedAt?: string; updatedAt?: string; status: "confirmed" | "review" };
 
 export const initialBoxes: BoxRecord[] = [];
 

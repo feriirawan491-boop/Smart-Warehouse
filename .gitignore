@@ -3,3 +3,9 @@ node_modules/
 out/
 *.tsbuildinfo
 .DS_Store
+
+# Local environment variables
+.env*
+!.env.example
+
+.next-dev/

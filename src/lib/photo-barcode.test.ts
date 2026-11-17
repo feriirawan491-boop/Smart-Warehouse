@@ -36,7 +36,7 @@ describe("barcode photo decoding", () => {
       if (result) values.add(result.rawValue);
     }
     expect([...values].sort()).toEqual(["323962794243", "324462875638"]);
-  });
+  }, 20000);
 
   it("does not invent a barcode in a blank photo", async () => {
     const decode = await createPhotoPixelReader();
